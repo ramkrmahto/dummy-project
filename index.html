@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="top_nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" id="navbarbrand" href="#"> <i class="bi bi-signpost-fill"></i>VETENARY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" id="searchform">
+                    <input type="text" id="searchbox" placeholder="search.." class="text-dark" >
+                    <button class="btn btn-outline-success" type="submit" id="searchbtn"><i
+                            class="bi bi-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- container-fluid -->
+
+    <div class="container-fluid">
+        <!-- banner  -->
+        <div class="row justify-content-center" id="banner">
+            <div class="col-md-6 col-11 " id="bannertext">
+                <h1>Lorem ipsum dolor <br> Laudantium.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi architecto perferendis dolorum
+                    corporis fuga sed dignissimos similique et.</p>
+                <button class="btn btn-primary">Contact us</button>
+                <button class="btn btn-outline-warning"> Our Services</button>
+            </div>
+            <div class="col-md-5 d-none d-md-block" id="bannerimg">
+                <img src="../assets/pets/dog-2.jpg " class="ms-5" alt="" height="350px" width="300px">
+            </div>
+        </div>
+        <div class="  row justify-content-center " id="services-head">
+            <div class="col-md-5 col-11" id="service-text">
+                <h1>Please.. We  also have  feelings </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est odit quaerat quas nesciunt delectus
+                    dolorem ducimus dolorum iste illum quos!</p>
+                <button class="btn btn-danger">Our Services</button>
+            </div>
+            <div class="col-md-5 col-11 mt-2" id="service-img">
+                <img src="../assets/pets/dog-4390885_640.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+
+        <!-- report  -->
+        <div class="row justify-content-center" id="report-section">
+            <div class="col-md-3 text-center">
+                <i class="bi bi-heart-half report-icons"></i>
+                <h3> +35000 <br> Happy Clients</h3>
+            </div>
+            <div class="col-md-3 text-center">
+                <i class="bi bi-heart-half report-icons"></i>
+                <h3> +35000 <br> Happy Clients</h3>
+            </div>
+            <div class="col-md-3 text-center">
+                <i class="bi bi-heart-half report-icons"></i>
+                <h3> +35000 <br> Happy Clients</h3>
+            </div>
+        </div>
+
+        <!-- blog  -->
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h1 id="blog-title" class="text-center"> Recent Posts</h1>
+                <p id="blog-para" class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                    accusantium voluptas aliquid, a tempora laboriosam, maiores quibusdam repudiandae provident dolore
+                    voluptatem asperiores distinctio minima tenetur exercitationem consectetur explicabo ut ipsam!</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-evenly mt-2" id="blog-section">
+            <div class="col-md-3 col-11 mt-2">
+                <img src="../assets/hotel/lunch.jpg" alt="" class="img-fluid">
+                <div class="blog-details">
+                    <h3>as a animal lover</h3>
+                    <p>March 21, 2021</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, incidunt.</p>
+                    <a href="#"> read more</a>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-11 mt-2">
+                <img src="../assets/hotel/lunch.jpg" alt="" class="img-fluid">
+                <div class="blog-details">
+                    <h3>as a animal lover</h3>
+                    <p>March 21, 2021</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, incidunt.</p>
+                    <a href="#"> read more</a>
+                </div>
+            </div>
+            <div class="col-md-3 col-11 mt-2">
+                <img src="../assets/hotel/lunch.jpg" alt="" class="img-fluid">
+                <div class="blog-details">
+                    <h3>as a animal lover</h3>
+                    <p>March 21, 2021</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, incidunt.</p>
+                    <a href="#"> read more</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- contact section  -->
+        <div class="row mt-4 mb-4 justify-content-evenly" id="contact-section">
+            <div class="col-md-5 col-11">
+                <h4>Contact form</h4>
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control">
+                <div id="request">we'll never share your email with anyone</div>
+                <label  class="form-label">message</label>
+                <input type="textarea" cols="30" rows="15" class="form-control">
+
+            </div>
+            <div class="col-md-5 col-11" id="address">
+                <h3>Address</h3>
+                <p>78, street-25,sector-9 <br>bokaro steel city <br>Jharkhand</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6444.640212029885!2d86.14052273574501!3d23.667920518832776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f42364d46fb5d1%3A0x143fd383ddb6ca37!2sHotel%20HillTop!5e0!3m2!1sen!2sin!4v1626242511508!5m2!1sen!2sin" style="width: 100%;" loading="lazy"></iframe>
+
+            </div>
+        </div>
+        <div class="row">
+           <div class="col-12 bg-secondary text-center p-2">
+               <button class="btn btn-warning">back to top</button>
+           </div>
+
+        </div>
+
+        <!-- footer  -->
+        <div class="row justify-content-center" id="footer">
+            <div class="col-md-3">
+                <h2 class="text-white">Services</h2>
+                <a href="#" class="anchor">History</a><br>
+                <a href="#" class="anchor">Our product</a><br>
+                <a href="#" class="anchor"> Dogs</a><br>
+                <a href="#" class="anchor"> Cats</a><br>
+            </div>
+            <div class="col-md-2">
+                <h2 class="text-white">Services</h2>
+                <a href="#" class="anchor">History</a><br>
+                <a href="#" class="anchor">Our product</a><br>
+                <a href="#" class="anchor"> Dogs</a><br>
+                <a href="#" class="anchor"> Cats</a><br>
+            </div>
+            <div class="col-md-4 col-11">
+                <h3 class="text-white text-end">title here</h3>
+                <p class="text-white text-end">Lorem ipsum dolor sit amet </p>
+                <form action="" id="footer-form" class="text-end">
+                    <input type="text" id="footer-search-box">
+                    <button type="submit" id="footer-submit"><i class="bi bi-cursor-fill"></i></button>
+                </form>
+                <div class="text-end">
+                    <i class="bi bi-facebook text-white social-icons" title="facebook"></i>
+                    <i class="bi bi-whatsapp text-white social-icons" title="whatsapp"></i>
+                    <i class="bi bi-twitter text-white social-icons"  title="twitter"></i>
+                    <i class="bi bi-instagram text-white social-icons" title="instagram"></i>
+                    <i class="bi bi-linkedin text-white social-icons" title="linkedin"></i>
+                </div>
+            </div>
+        </div>
+        <!-- container fluid end  -->
+    </div>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
