@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+    <style>
+        body {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flex-container {
+            display: flex;
+            /* flex-wrap: wrap; */
+            justify-content: space-evenly;
+            align-items: center;
+            height: 500px;
+            width: 700px;
+            background-color: tomato;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .form-elements {
+            width: 300px;
+            margin: 8px;
+            padding: 7px 5px;
+        }
+
+        #form-section {
+            background-color: white;
+            width: 350px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-radius: 10px;
+
+        }
+
+        .btn-design {
+            background-color: #37d63f;
+            width: 316px;
+            border-radius: 8px;
+            border: 0px;
+        }
+
+        #header-style {
+            font-size: 37px;
+            font-weight: bold;
+            color: white;
+        }
+
+        #para-style {
+            color: white;
+        }
+
+        #alert-box {
+            background-color: rgb(90, 7, 90);
+            padding: 7px;
+            margin-bottom: 30px;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+        }
+        #after-trial{
+            font-size: 9px;
+        }
+
+        #bottom-text {
+            font-size: 10px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 420px) {
+            .flex-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                background-color: tomato;
+                padding: 20px;
+                border-radius: 15px;
+            }
+        }
+        @media screen and (min-width: 420px) and (max-width: 600px) {
+            .flex-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                background-color: tomato;
+                padding: 20px;
+                border-radius: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-items">
+            <h3 id="header-style">Lor adipisicing elit. Beatae, ut.</h3>
+            <p id="para-style">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dignissimos mollitia
+                nam deleniti
+                perferendis veniam explicabo ratione at optio repellendus!</p>
+
+        </div>
+        <div class="flex-items">
+            <div id="alert-box">try it free 7 days <span id="after-trial">then after $20/month</span></div>
+            <div id="form-section">
+                <input type="text" placeholder="First Name" class="form-elements">
+                <input type="text" placeholder="Last Name" class="form-elements">
+                <input type="email" placeholder="Email" class="form-elements">
+                <input type="password" placeholder="Password" class="form-elements">
+                <button type="button" class="form-elements btn-design">Claim Your Free Trail</button>
+                <div id="bottom-text">Lorem ipsum dolor sit amet <a href="#"> Terms and Conditions</a> </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

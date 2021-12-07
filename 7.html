@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../fonts/css/all.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: rgb(55, 38, 165);
+            height: 400px;
+            width: 950px;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 20px;
+        }
+
+        #header-text {
+            text-align: center;
+            margin-top: 80px;
+            color: white;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 45px;
+        }
+
+        .flex-item {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(32, 29, 29);
+            border-radius: 8px;
+            padding: 10px;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .num-decoration {
+            color: rgb(245, 47, 12);
+            font-size: 70px;
+        }
+
+        .time-decoration {
+            color: white;
+            position: relative;
+            left: 53px;
+        }
+
+        .fab {
+            color: white;
+            padding: 2px 2px;
+        }
+
+        .fab:hover {
+            background-color: rgb(189, 181, 181);
+            border-radius: 6px;
+            padding: 3px;
+        }
+
+        #icon-design {
+            text-align: center;
+            position: relative;
+            top: 27px;
+        }
+
+        /* for small devices  */
+        @media screen and (max-width: 450px) {
+            .container {
+                background-color: rgb(55, 38, 165);
+                height: 950px;
+                width: 360px;
+                padding: 20px;
+                margin: 20px;
+                border-radius: 20px;
+            }
+
+            .flex-container {
+                display: flex;
+                flex-wrap: wrap;
+                /* justify-content: center; */
+                margin-top: 45px;
+            }
+        }
+
+        @media screen and (min-width: 451px) and (max-width: 650px) {
+            .container {
+                background-color: rgb(55, 38, 165);
+                height: 950px;
+                width: 485px;
+                padding: 20px;
+                margin: 20px;
+                border-radius: 20px;
+            }
+
+            .flex-container {
+                display: flex;
+                flex-wrap: wrap;
+                /* justify-content: center; */
+                margin-top: 45px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h3 id="header-text"> WE'RE LAUNCHING SOON</h3 </div>
+            <div class="flex-container">
+                <div>
+                    <div class="flex-item">
+                        <h1 class="num-decoration">08</h1>
+                    </div>
+                    <p class="time-decoration">DAYS</p>
+                </div>
+
+                <div>
+                    <div class="flex-item">
+                        <h1 class="num-decoration">15</h1>
+                    </div>
+                    <p class="time-decoration">HOURS</p>
+                </div>
+
+                <div>
+                    <div class="flex-item">
+                        <h1 class="num-decoration">18</h1>
+                    </div>
+                    <p class="time-decoration">MINUTES</p>
+                </div>
+
+                <div>
+                    <div class="flex-item">
+                        <h1 class="num-decoration">55</h1>
+                    </div>
+                    <p class="time-decoration">SECONDS</p>
+                </div>
+
+            </div>
+            <div id="icon-design">
+                <p><span><i class="fab fa-facebook-square"></i></span>
+                    <span><i class="fab fa-pinterest"></i></span>
+                    <span><i class="fab fa-instagram"></i></span>
+                </p>
+            </div>
+        </div>
+
+</body>
+
+</html>

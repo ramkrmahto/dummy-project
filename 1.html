@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> UI-1</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        #container {
+            width: 700px;
+            height: 550px;
+            background-color: rgb(30, 186, 184);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #box {
+            width: 400px;
+        }
+
+        #top-color {
+            background-color: rgb(13, 116, 116);
+            height: 150px;
+            /* border-radius: 10px; */
+        }
+
+        #condidate-details {
+            background-color: white;
+        }
+
+        #img-design {
+            text-align: center;
+            border: 3px solid white;
+            border-radius: 50%;
+            position: relative;
+            left: 155px;
+            top: -46px;
+        }
+
+        #item-box {
+            position: relative;
+            top: -63px;
+        }
+
+        .keepCenter {
+            text-align: center;
+        }
+
+        #flex-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .flex-items {
+            margin: 0px 20px;
+        }
+
+        .set-position {
+            position: relative;
+            top: -10px;
+        }
+
+        .set-text-follower {
+            position: relative;
+            left: -12px;
+        }
+
+        .set-text-dislikes {
+            position: relative;
+            left: -4px;
+
+
+        }
+
+        @media screen and (max-width: 480px) {
+            #container {
+                width: 325px;
+                height: 526px;
+                background-color: rgb(30, 186, 184);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0px 55px
+            }
+
+            #img-design {
+                text-align: center;
+                border: 3px solid white;
+                border-radius: 50%;
+                position: relative;
+                left: 110px;
+                top: -46px;
+            }
+        }
+
+        @media screen and (max-width: 480px) and (min-width: 780px) {
+            #container {
+                width: 500px;
+                height: 550px;
+                background-color: rgb(30, 186, 184);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #img-design {
+                text-align: center;
+                border: 3px solid white;
+                border-radius: 50%;
+                position: relative;
+                left: 110px;
+                top: -46px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="box">
+            <div id="top-color"> </div>
+
+            <!-- <div id="img-design"><img src="../image/photo.jpg" alt="" height="100px" width="100px"></div> -->
+
+            <div id="condidate-details">
+                <img src="../image/photo.jpg" id="img-design" alt="" height="100px" width="100px">
+                <div id="item-box">
+                    <h3 class="keepCenter"><b>Ram Kumar</b> <span style="font-weight: lighter;">25</span></h3>
+                    <p class="keepCenter set-position">Ranchi</p>
+                    <div id="flex-container">
+                        <div class="flex-items"><b>80K</b> <br>
+                            <p class="set-position set-text-follower">follower</p>
+                        </div>
+                        <div class="flex-items"><b>803K</b> <br>
+                            <p class="set-position">likes</p>
+                        </div>
+                        <div class="flex-items"><b>1.4K</b> <br>
+                            <p class="set-position set-text-dislikes">dislikes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>

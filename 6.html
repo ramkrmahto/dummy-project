@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise-6</title>
+</head>
+<style>
+    body {
+        /* height: 100%;
+        width: 100%; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        background-color: darkgray;
+        width: 700px;
+        height: 500px;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .flex-items {
+        background-color: white;
+        /* border: 2px solid blue; */
+        border-radius: 8px;
+        padding: 16px;
+        width: 160px;
+        text-align: center;
+    }
+
+    .btn-style {
+        background-color: rgb(15, 88, 223);
+        text-decoration: none;
+        width: 96%;
+        padding: 5px;
+        border: 0px;
+        border-radius: 8px;
+        color: white;
+    }
+
+    .flex-items:hover {
+        background-color: rgb(12, 179, 235);
+        color: white;
+    }
+
+    #top-text {
+        position: relative;
+        bottom: 16px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        left: 601px;
+    }
+
+    .header-text {
+        text-align: center;
+    }
+
+    #monthly {
+        position: relative;
+        left: -14px;
+        bottom: -3px;
+        font-weight: bold;
+    }
+
+    #anually {
+        position: relative;
+        left: 16px;
+        bottom: -3px;
+        font-weight: bold;
+    }
+
+    /* toggle button  */
+    /* The switch - the box around the slider */
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 52px;
+        height: 25px;
+    }
+
+    /* Hide default HTML checkbox */
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    /* The slider */
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 25px;
+        width: 26px;
+        left: 4px;
+        bottom: 0px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked+.slider {
+        background-color: #2196F3;
+    }
+
+    input:focus+.slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked+.slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+
+
+    /* for small devices  */
+    @media screen and (max-width: 430px) {
+        .container {
+            background-color: darkgray;
+            width: 310px;
+            height: 1092px;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .flex-container {
+            display: flex;
+            /* justify-content: space-evenly; */
+            flex-wrap: wrap;
+            margin-top: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .flex-items {
+            background-color: white;
+            /* border: 2px solid blue; */
+            border-radius: 8px;
+            padding: 16px;
+            width: 160px;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+
+        #top-text {
+            position: relative;
+            bottom: 16px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            left: 7px;
+        }
+
+        @media screen and (min-width: 500px) and (max-width: 800px) {
+            .container {
+                background-color: darkgray;
+                width: 310px;
+                height: 1092px;
+                padding: 20px;
+                margin: 10px;
+            }
+
+            .flex-container {
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                margin-top: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1 id="top-text">FREE</h1>
+        <h3 class="header-text">Our Pricing</h3>
+        <div class="header-text"><span id="monthly">Monthly</span>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <span id="anually">Anually</span>
+        </div>
+        <div class="flex-container">
+            <div class="flex-items">
+                <p>Basic</p>
+                <h1>$ 19.99</h1>
+                <p>500 Gb Storage</p>
+                <p>2 Users Allowed</p>
+                <p>send upto 3Gb</p>
+                <button type="button" class="btn-style"> learn more</button>
+            </div>
+            <div class="flex-items">
+                <p>Basic</p>
+                <h1>$ 19.99</h1>
+                <p>500 Gb Storage</p>
+                <p>2 Users Allowed</p>
+                <p>send upto 3Gb</p>
+                <button type="button" class="btn-style">learn more</button>
+            </div>
+            <div class="flex-items">
+                <p>Basic</p>
+                <h1>$ 19.99</h1>
+                <p>500 Gb Storage</p>
+                <p>2 Users Allowed</p>
+                <p>send upto 3Gb</p>
+                <button type="button" class="btn-style">learn more</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

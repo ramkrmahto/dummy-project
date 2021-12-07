@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: lightblue;
+            padding: 50px;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-areas:
+                'item-1 item-1 item-2 item-3'
+                'item-4 item-5 item-5 item-3';
+        }
+
+        .grid-items {
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        #item-1 {
+            background-color: rgb(83, 5, 114);
+            color: white;
+            grid-area: item-1;
+        }
+
+        #item-2 {
+            background-color: rgba(24, 23, 23, 0.404);
+            color: white;
+            grid-area: item-2;
+        }
+
+        #item-3 {
+            grid-area: item-3;
+            background-color: white;
+
+        }
+
+        #item-4 {
+            grid-area: item-4;
+            background-color: white;
+        }
+
+        #item-5 {
+            background-color: rgb(1, 4, 14);
+            color: white;
+            grid-area: item-5;
+        }
+
+        .photo-style {
+            border-radius: 50px;
+        }
+
+        .name-position {
+            position: relative;
+            left: 12px;
+            bottom: 7px;
+        }
+
+        .designation-position {
+            position: relative;
+            left: 36px;
+            bottom: 17px;
+            font-size: 10px;
+        }
+
+        @media screen and (max-width: 700px) {
+            .container {
+                background-color: lightblue;
+                padding: 50px;
+                display: grid;
+                grid-gap: 10px;
+                /* width: 80%; */
+                grid-template-areas:
+                    'item-1'
+                    'item-2'
+                    'item-3'
+                    'item-4'
+                    'item-5'
+                    /* 'item-4 item-5 item-5 item-3' */
+                ;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="big-container">
+
+        <div class="container">
+            <div class="grid-items" id="item-1">
+                <div><img src="../image/photo.jpg" class="photo-style" alt="" height="20px" width="20px">
+                    <span class="name-position">Danial sam</span>
+                    <p class="designation-position">software developer</p>
+                </div>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptates dolore in pariatur
+                    expedita dolor illum doloribus</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore consectetur obcaecati enim rem
+                    earum,
+                    dolor ratione maxime illo cumque maiores possimus, asperiores dolore nulla quos numquam magni
+                    nesciunt
+                    nostrum quaerat esse fugiat facere animi et porro? Obcaecati autem inventore maxime?
+                </p>
+            </div>
+            <div class="grid-items" id="item-2">
+                <div><img src="../image/photo.jpg" class="photo-style" alt="" height="20px" width="20px">
+                    <span class="name-position">Danial sam</span>
+                    <p class="designation-position">software developer</p>
+                </div>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, rem?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi asperiores facere doloremque fugit in!
+                    Nam
+                    impedit corporis rerum magnam. Consequatur?</p>
+            </div>
+            <div class="grid-items" id="item-3">
+                <div><img src="../image/photo.jpg" class="photo-style" alt="" height="20px" width="20px">
+                    <span class="name-position">Danial sam</span>
+                    <p class="designation-position">software developer</p>
+                </div>
+                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae facilis eaque culpa tempore eum odit?
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem necessitatibus quasi aliquid,
+                    adipisci
+                    eveniet quaerat labore ducimus harum, maxime ad reprehenderit dolore blanditiis officia consectetur
+                    earum quo velit dolor. Sint, nulla commodi earum nisi nihil vel ad distinctio obcaecati perferendis.
+                </p>
+            </div>
+            <div class="grid-items" id="item-4">
+                <div><img src="../image/photo.jpg" class="photo-style" alt="" height="20px" width="20px">
+                    <span class="name-position">Danial sam</span>
+                    <p class="designation-position">software developer</p>
+                </div>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ipsa?</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum nihil exercitationem eum iure
+                    dolorem
+                    sunt.</p>
+            </div>
+            <div class="grid-items" id="item-5">
+                <div><img src="../image/photo.jpg" class="photo-style" alt="" height="20px" width="20px">
+                    <span class="name-position">Danial sam</span>
+                    <p class="designation-position">software developer</p>
+                </div>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis cumque eius deserunt ad vitae debitis
+                    tempore ut?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam porro quos sed, earum quas libero
+                    excepturi
+                    hic culpa ex sequi! Impedit recusandae odio excepturi dignissimos.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../fonts/css/all.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: seashell;
+            height: 500px;
+            width: 800px;
+            margin: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-container {
+            background-color: rgb(195, 228, 241);
+            height: 450px;
+            width: 750px;
+        }
+
+        #heading {
+            text-align: center;
+            margin-top: 65px;
+            font-size: 10px;
+        }
+
+        .box {
+            height: 279px;
+            width: 600px;
+            background-color: white;
+            position: relative;
+            left: 82px;
+            top: 20px;
+            border-radius: 7px;
+            /* display: flex;
+            flex-wrap: wrap; */
+        }
+
+        /* flex items  */
+        .flex-container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: relative;
+            top: 15px;
+        }
+
+        .flex-item {
+            height: 214px;
+            width: 224px;
+            padding: 15px;
+        }
+
+        .flex-item:hover {
+            background-color: rgb(11, 31, 37);
+            color: white;
+        }
+
+        /* inner flex boxes  */
+        /* ist inner flex box  */
+        .inner-flex-container {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            /* border: 1px solid red; */
+            position: relative;
+            top: -66px;
+        }
+
+        .inner-flex-item {
+            background-color: rgb(7, 132, 204);
+            padding: 3px 12px;
+            margin: 7px;
+            border-radius: 7px;
+        }
+
+        #text-bill {
+            position: relative;
+            bottom: 37px;
+            font-size: 15px;
+        }
+
+        #bill-ammount {
+            position: relative;
+            bottom: 53px;
+            padding: 5px 9px;
+            border-radius: 8px;
+            background-color: rgb(73, 69, 69);
+            color: white;
+            font-weight: bold;
+        }
+
+        .bill-ammount-doller {
+            position: relative;
+            left: 100px;
+        }
+
+        #select-tip {
+            position: relative;
+            top: -59px;
+        }
+
+        #custom-tip {
+            background-color: gray;
+
+        }
+
+        #five-p-tip {
+            padding: 3px 17px;
+        }
+
+        #no-of-people {
+            position: relative;
+            bottom: 84px;
+        }
+
+        #people-count {
+            position: relative;
+            bottom: 98px;
+            background-color: rgb(73, 69, 69);
+            padding: 5px 9px;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+
+        }
+
+        .fa-users {
+            position: relative;
+            left: 185px;
+
+        }
+
+
+        /* 2nd inner flex box  */
+        .cost-per-person {
+            font-size: 30px;
+            font-weight: bold;
+            position: relative;
+            left: 56px;
+            top: 5px;
+        }
+
+        .total-cost-per-person {
+            font-size: 30px;
+            font-weight: bold;
+            position: relative;
+            left: 82px;
+            top: 5px;
+
+        }
+
+        .per-person {
+            position: relative;
+            bottom: 22px;
+            font-size: 13px;
+        }
+
+        #btn-style {
+            border: 0px;
+            background-color: rgb(32, 161, 236);
+            margin: 0px 2px;
+            padding: 5px 3px;
+            border-radius: 7px;
+            width: 201px;
+            position: relative;
+            left: 11px;
+            color: white;
+        }
+
+
+        /* for smaller device  */
+
+        @media screen and (max-width: 430px) {
+            .flex-container {
+                display: flex;
+                flex-wrap: wrap;
+                position: relative;
+                top: 15px;
+            }
+
+            .flex-item {
+                height: 214px;
+                width: 224px;
+                padding: 15px;
+            }
+
+            .box {
+                height: 561px;
+                width: 489px;
+                background-color: white;
+                position: relative;
+                left: 218px;
+                top: 20px;
+                border-radius: 7px;
+            }
+
+            #heading {
+                text-align: center;
+                margin-top: 65px;
+                font-size: 15px;
+                position: relative;
+                left: 78px;
+            }
+
+            .container {
+                background-color: seashell;
+                height: 500px;
+                width: 800px;
+                margin: 30px;
+            }
+        }
+
+        @media screen and (min-width: 431px) and (max-width: 650px) {
+            .flex-container {
+                display: flex;
+                flex-wrap: wrap;
+                position: relative;
+                top: 15px;
+            }
+
+            .flex-item {
+                height: 214px;
+                width: 224px;
+                padding: 15px;
+            }
+
+            .box {
+                height: 561px;
+                width: 489px;
+                background-color: white;
+                position: relative;
+                left: 218px;
+                top: 20px;
+                border-radius: 7px;
+            }
+
+            #heading {
+                text-align: center;
+                margin-top: 65px;
+                font-size: 15px;
+                position: relative;
+                left: 78px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-container">
+            <div id="heading">
+                <h2>S P L I<br>T T E R</h2>
+            </div>
+            <div class="box">
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <h6 id="text-bill">Bill</h6>
+                        <p id="bill-ammount">$ <span class="bill-ammount-doller">142.55</span></p>
+                        <p id="select-tip">select tip %</p>
+
+                        <div class="inner-flex-container">
+                            <div class="inner-flex-item" id="five-p-tip">5%</div>
+                            <div class="inner-flex-item" id="ten-p-tip">10%</div>
+                            <div class="inner-flex-item" id="fifteen-p-tip">15%</div>
+                            <div class="inner-flex-item" id="tfive-p-tip">25%</div>
+                            <div class="inner-flex-item" id="fifty-p-tip">50%</div>
+                            <div class="inner-flex-item" id="custom-tip">custom</div>
+
+                        </div>
+                        <p id="no-of-people">Number of people</p>
+                        <p id="people-count"><i class="fas fa-users"></i>
+                            <span>5</span>
+                        </p>
+                    </div>
+                    <div class="flex-item">
+                        <div>
+                            <p>Tip Amount <span class="cost-per-person">$ 4.27</span></p>
+                            <p class="per-person">/person</p>
+                        </div>
+                        <div>
+                            <p>Total <span class="total-cost-per-person">$ 32.78</span></p>
+                            <p class="per-person">/person</p>
+                        </div>
+                        <button type="button" id="btn-style">Reset</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

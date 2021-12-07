@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../fonts/css/all.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            height: 500px;
+            width: 750px;
+            background-color: rgb(250, 247, 243);
+            border-radius: 16px;
+            box-shadow: -5px -5px rgb(228, 220, 220);
+            padding: 40px;
+            margin: 20px;
+        }
+
+        /* flex-container-1 */
+        .flex-container-1 {
+            display: flex;
+            justify-content: space-between;
+            margin: 4px;
+            padding: 22px
+        }
+
+        .fa-star {
+            color: red;
+        }
+
+        #first-review {
+            position: relative;
+            right: 20px;
+        }
+
+        #second-review {
+            position: relative;
+            right: 10px;
+        }
+
+        .ratings {
+            background-color: seashell;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+
+        /* flex container 2  */
+
+
+        .flex-container-2 {
+            display: flex;
+        }
+
+        .flex-item-2 {
+            height: 160px;
+            width: 220px;
+            border: 2px solid black;
+            padding: 15px;
+            margin: 10px;
+            background-color: rgb(106 25 163 / 86%);
+            color: white;
+            border-radius: 10px;
+        }
+
+        .img-style {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+        }
+
+        .set-name-position {
+            position: relative;
+            left: 14px;
+            bottom: 11px;
+            font-size: 19px;
+        }
+
+        .set-designation-position {
+            position: relative;
+            left: 58px;
+            bottom: 20px;
+            font-size: 13px;
+            color: red;
+        }
+
+        #second-box {
+            position: relative;
+            top: 10px;
+        }
+
+        #third-box {
+            position: relative;
+            top: 20px;
+        }
+
+        .text-position {
+            position: relative;
+            bottom: 21px;
+        }
+
+        /* for small devices  */
+
+        @media screen and (max-width: 420px) {
+            .container {
+                /* height: 500px;
+                width: 750px; */
+                background-color: rgb(250, 247, 243);
+                border-radius: 16px;
+                box-shadow: -5px -5px rgb(228, 220, 220);
+                padding: 40px;
+                margin: 20px;
+            }
+
+            .flex-container-1 {
+                display: flex;
+                flex-wrap: wrap !important;
+                margin: 4px;
+                padding: 22px
+            }
+
+            .flex-container-2 {
+                display: flex;
+                flex-wrap: wrap !important;
+            }
+        }
+
+        @media screen and (max-width: 600px) and (min-width: 431px) {
+            .container {
+                /* height: 500px;
+                width: 750px; */
+                background-color: rgb(250, 247, 243);
+                border-radius: 16px;
+                box-shadow: -5px -5px rgb(228, 220, 220);
+                padding: 40px;
+                margin: 20px;
+            }
+
+            .flex-container-1 {
+                display: flex;
+                flex-wrap: wrap !important;
+                margin: 4px;
+                padding: 22px
+            }
+
+            .flex-container-2 {
+                display: flex;
+                flex-wrap: wrap !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="flex-container-1">
+            <div class="flex-item-1">
+                <h2>Lorem ipsum dolor sit <br>amet c elit.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>elit. Voluptas eaque earum aspernatur.</p>
+            </div>
+            <div class="flex-item-1">
+                <p id="first-review" class="ratings"><i class="far fa-star"></i><i class="far fa-star"></i><i
+                        class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> <span>rated 5
+                        star on reviews</span></p>
+                <p id="second-review" class="ratings"><i class="far fa-star"></i><i class="far fa-star"></i><i
+                        class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> <span>rated 5
+                        star on reviews</span></p>
+                <p id="third-review" class="ratings"><i class="far fa-star"></i><i class="far fa-star"></i><i
+                        class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> <span>rated 5
+                        star on reviews</span></p>
+            </div>
+        </div>
+
+
+
+        <div class="flex-container-2">
+            <div class="flex-item-2">
+                <div> <img src="../image/photo.jpg" class="img-style" alt="">
+                    <span class="set-name-position"> Jhony Carter </span>
+                    <p class="set-designation-position">Architect</p>
+                </div>
+                <p class="text-position"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur excepturi
+                    alias quo minima dolores
+                    suscipit cumque!</p>
+            </div>
+
+            <div class="flex-item-2" id="second-box">
+                <div> <img src="../image/photo.jpg" class="img-style" alt="" height="75px" width="75px">
+                    <span class="set-name-position"> Jhony Carter </span>
+                    <p class="set-designation-position">Architect</p>
+                </div>
+                <p class="text-position"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur excepturi
+                    alias quo minima dolores
+                    suscipit cumque!</p>
+            </div>
+
+            <div class="flex-item-2" id="third-box">
+                <div>
+                    <img src="../image/photo.jpg" class="img-style" alt="" height="75px" width="75px">
+                    <span class="set-name-position"> Jhony Carter </span>
+                    <p class="set-designation-position">Architect</p>
+                </div>
+                <p class="text-position"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur excepturi
+                    alias quo minima dolores
+                    suscipit cumque!</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
